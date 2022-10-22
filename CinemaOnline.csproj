@@ -1,0 +1,562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A6E6F348-A1DC-448B-8FB4-98A8DCAD9C76}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CinemaOnline</RootNamespace>
+    <AssemblyName>CinemaOnline</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABeginner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABeginner.Designer.cs">
+      <DependentUpon>ABeginner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Action.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Action.Designer.cs">
+      <DependentUpon>Action.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adventur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adventur.Designer.cs">
+      <DependentUpon>Adventur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AmericanMade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AmericanMade.Designer.cs">
+      <DependentUpon>AmericanMade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apartament212.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apartament212.Designer.cs">
+      <DependentUpon>Apartament212.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AskTesadufleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AskTesadufleri.Designer.cs">
+      <DependentUpon>AskTesadufleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeastOfBurden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeastOfBurden.Designer.cs">
+      <DependentUpon>BeastOfBurden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Biography.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Biography.Designer.cs">
+      <DependentUpon>Biography.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Birthmarked.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Birthmarked.Designer.cs">
+      <DependentUpon>Birthmarked.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BodyOfSin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BodyOfSin.Designer.cs">
+      <DependentUpon>BodyOfSin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bullet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bullet.Designer.cs">
+      <DependentUpon>Bullet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChinaSalesman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChinaSalesman.Designer.cs">
+      <DependentUpon>ChinaSalesman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cinema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cinema.Designer.cs">
+      <DependentUpon>Cinema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comedy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comedy.Designer.cs">
+      <DependentUpon>Comedy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeepBlueSea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeepBlueSea.Designer.cs">
+      <DependentUpon>DeepBlueSea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForeverMyGirl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForeverMyGirl.Designer.cs">
+      <DependentUpon>ForeverMyGirl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Horror.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Horror.Designer.cs">
+      <DependentUpon>Horror.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jumanji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jumanji.Designer.cs">
+      <DependentUpon>Jumanji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaraCroftTombRaider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaraCroftTombRaider.Designer.cs">
+      <DependentUpon>LaraCroftTombRaider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MazeRunner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MazeRunner.Designer.cs">
+      <DependentUpon>MazeRunner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAZINGER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAZINGER.Designer.cs">
+      <DependentUpon>MAZINGER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Negative.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Negative.Designer.cs">
+      <DependentUpon>Negative.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewLife.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewLife.Designer.cs">
+      <DependentUpon>NewLife.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Outlander.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Outlander.Designer.cs">
+      <DependentUpon>Outlander.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Romance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Romance.Designer.cs">
+      <DependentUpon>Romance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sci-Fi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sci-Fi.Designer.cs">
+      <DependentUpon>Sci-Fi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingUp.Designer.cs">
+      <DependentUpon>SingUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sport.Designer.cs">
+      <DependentUpon>Sport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stronger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stronger.Designer.cs">
+      <DependentUpon>Stronger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Surrogates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Surrogates.Designer.cs">
+      <DependentUpon>Surrogates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TheDebtCollector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheDebtCollector.Designer.cs">
+      <DependentUpon>TheDebtCollector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TheHole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheHole.Designer.cs">
+      <DependentUpon>TheHole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TheRevengeofRobert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheRevengeofRobert.Designer.cs">
+      <DependentUpon>TheRevengeofRobert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TheThousandFacesOfDunjia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheThousandFacesOfDunjia.Designer.cs">
+      <DependentUpon>TheThousandFacesOfDunjia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TheWhiskyRobber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheWhiskyRobber.Designer.cs">
+      <DependentUpon>TheWhiskyRobber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimTimmerman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimTimmerman.Designer.cs">
+      <DependentUpon>TimTimmerman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TombRaider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TombRaider.Designer.cs">
+      <DependentUpon>TombRaider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="War.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="War.Designer.cs">
+      <DependentUpon>War.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Western.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Western.Designer.cs">
+      <DependentUpon>Western.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wild.Designer.cs">
+      <DependentUpon>Wild.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ABeginner.resx">
+      <DependentUpon>ABeginner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Action.resx">
+      <DependentUpon>Action.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adventur.resx">
+      <DependentUpon>Adventur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AmericanMade.resx">
+      <DependentUpon>AmericanMade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apartament212.resx">
+      <DependentUpon>Apartament212.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AskTesadufleri.resx">
+      <DependentUpon>AskTesadufleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeastOfBurden.resx">
+      <DependentUpon>BeastOfBurden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biography.resx">
+      <DependentUpon>Biography.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Birthmarked.resx">
+      <DependentUpon>Birthmarked.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BodyOfSin.resx">
+      <DependentUpon>BodyOfSin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bullet.resx">
+      <DependentUpon>Bullet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChinaSalesman.resx">
+      <DependentUpon>ChinaSalesman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cinema.resx">
+      <DependentUpon>Cinema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comedy.resx">
+      <DependentUpon>Comedy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeepBlueSea.resx">
+      <DependentUpon>DeepBlueSea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForeverMyGirl.resx">
+      <DependentUpon>ForeverMyGirl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Horror.resx">
+      <DependentUpon>Horror.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jumanji.resx">
+      <DependentUpon>Jumanji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaraCroftTombRaider.resx">
+      <DependentUpon>LaraCroftTombRaider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MazeRunner.resx">
+      <DependentUpon>MazeRunner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAZINGER.resx">
+      <DependentUpon>MAZINGER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Negative.resx">
+      <DependentUpon>Negative.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewLife.resx">
+      <DependentUpon>NewLife.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Outlander.resx">
+      <DependentUpon>Outlander.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Romance.resx">
+      <DependentUpon>Romance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sci-Fi.resx">
+      <DependentUpon>Sci-Fi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingUp.resx">
+      <DependentUpon>SingUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sport.resx">
+      <DependentUpon>Sport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stronger.resx">
+      <DependentUpon>Stronger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Surrogates.resx">
+      <DependentUpon>Surrogates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheDebtCollector.resx">
+      <DependentUpon>TheDebtCollector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheHole.resx">
+      <DependentUpon>TheHole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheRevengeofRobert.resx">
+      <DependentUpon>TheRevengeofRobert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheThousandFacesOfDunjia.resx">
+      <DependentUpon>TheThousandFacesOfDunjia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheWhiskyRobber.resx">
+      <DependentUpon>TheWhiskyRobber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimTimmerman.resx">
+      <DependentUpon>TimTimmerman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TombRaider.resx">
+      <DependentUpon>TombRaider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="War.resx">
+      <DependentUpon>War.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Western.resx">
+      <DependentUpon>Western.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wild.resx">
+      <DependentUpon>Wild.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
